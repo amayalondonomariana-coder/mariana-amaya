@@ -1,0 +1,182 @@
+/* Configuración general */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #fff5f7;
+color: #39252c;
+line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+width: 100%;
+height: 190px;
+background-color: #d86b8b;
+color: white;
+text-align: center;
+padding: 35px;
+}
+
+header h1 {
+font-size: 48px;
+letter-spacing: 3px;
+}
+
+header p {
+font-size: 18px;
+}
+
+/* Menú de navegación */
+nav {
+background-color: #39252c;
+padding: 15px;
+}
+
+#menu {
+list-style: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 35px;
+}
+
+#menu a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+#menu a:hover {
+color: #ffb6cb;
+}
+
+/* Secciones */
+section {
+padding: 35px 8%;
+text-align: center;
+}
+
+section h2 {
+color: #bd496f;
+margin-bottom: 20px;
+font-size: 28px;
+}
+
+.portada {
+background-color: #ffe1e9;
+}
+
+.portada p {
+max-width: 750px;
+margin: 0 auto 20px;
+}
+
+.portada img {
+width: 100%;
+max-width: 750px;
+height: 350px;
+object-fit: cover;
+border-radius: 15px;
+}
+
+/* Productos */
+#productos {
+background-color: white;
+}
+
+.producto {
+display: inline-block;
+vertical-align: top;
+width: 30%;
+min-width: 220px;
+margin: 10px;
+padding: 15px;
+background-color: #fff0f4;
+border-radius: 12px;
+}
+
+.producto img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.producto h3 {
+color: #bd496f;
+margin: 10px 0;
+}
+
+/* Consejos */
+#consejos {
+background-color: #f8d6e0;
+}
+
+#consejos article {
+display: inline-block;
+vertical-align: top;
+width: 28%;
+min-width: 200px;
+margin: 10px;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+}
+
+/* Dato curioso */
+aside {
+width: 100%;
+padding: 30px 8%;
+background-color: #f4b7ca;
+text-align: center;
+}
+
+aside h2 {
+color: #39252c;
+}
+
+/* Contacto */
+#contacto {
+background-color: #fff5f7;
+}
+
+/* Pie de página */
+footer {
+width: 100%;
+min-height: 120px;
+background-color: #39252c;
+color: white;
+text-align: center;
+padding: 25px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+header {
+height: auto;
+}
+
+header h1 {
+font-size: 35px;
+}
+
+#menu {
+gap: 15px;
+}
+
+.producto,
+#consejos article {
+width: 100%;
+margin: 10px 0;
+}
+
+.portada img {
+height: 230px;
+}
+}
